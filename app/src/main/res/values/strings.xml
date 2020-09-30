@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Primer proyecto</string>
+    <string name="author">Brayan Romero</string>
+
 </resources>
