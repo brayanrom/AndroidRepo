@@ -6,6 +6,9 @@
     <color name="mirojo">#FF0000</color>
     <color name="blanco">#FFFFFF</color>
     <color name="negro">#000000</color>
+    <color name="naranja">#FF9824</color>
+    <color name="gris">#555555</color>
+    <color name="blanco_grisaceo">#AAAAAA</color>
 
 
 </resources>

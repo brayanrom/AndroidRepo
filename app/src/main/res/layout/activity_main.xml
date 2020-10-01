@@ -1,49 +1,256 @@
-<RelativeLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/fondo"
+    android:orientation="vertical"
     >
 
-    <FrameLayout
-        android:layout_width="500dp"
-        android:layout_height="200dp"
-        android:background="@color/colorPrimaryDark"
-        android:layout_centerInParent="true"
+    //divicion de principal(toda la area)
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        //divicion del apartado de operaciones(el cuadro completo  de arriba xd)
+    <LinearLayout
+        android:background="@color/gris"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
         >
 
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:text="De los mejores mapas que encontraras en tu vida"
-            android:background="@color/colorPrimaryDark"
-            android:layout_gravity="right|center_vertical"
-            />
 
 
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="left|center_vertical"
-            android:src="@drawable/ic"
-            />
-
-
-
-
-
-
-
-
-
-
-
-
+//donde hare todo el texto y cosas feas :'v
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/naranja"
+                android:text="Calculadora"
+                android:layout_gravity="right|top"
+                >
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/naranja"
+                android:text="Resultado"
+                android:layout_gravity="right|bottom"
+                >
+            </Button>
 
     </FrameLayout>
-</RelativeLayout>
+
+
+
+    </LinearLayout>
+        //divicion de la seccion de teclas
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:orientation="vertical"
+    android:background="@color/blanco_grisaceo"
+        >
+    //divicion de las botones
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="@color/naranja"
+            android:text="C"
+            >
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="( )"
+            android:textColor="@color/naranja"
+            >
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="DEL"
+            android:textColor="@color/naranja"
+            >
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="/"
+            android:textColor="@color/naranja"
+            >
+        </Button>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="7"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="8"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="9"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textColor="@color/naranja"
+                android:text="X"
+                >
+            </Button>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="4"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="5"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="6"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="-"
+                android:textColor="@color/naranja"
+                >
+            </Button>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="1"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="2"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="3"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textColor="@color/naranja"
+                android:text="+"
+                >
+            </Button>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="0"
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="."
+                >
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="="
+                android:background="@color/naranja"
+                android:textColor="@color/blanco"
+                >
+            </Button>
+
+        </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
